@@ -1,0 +1,28 @@
+{
+  "name": "walletconnect-reach",
+  "version": "1.0.0",
+  "description": "Reach walletconnect demo",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^18.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfustino/walletconnect-reach.git"
+  },
+  "keywords": [
+    "Wallet",
+    "reach",
+    "algorand"
+  ],
+  "author": "Russ Fustino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rfustino/walletconnect-reach/issues"
+  },
+  "homepage": "https://github.com/rfustino/walletconnect-reach#readme"
+}
