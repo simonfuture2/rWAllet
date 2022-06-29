@@ -6,14 +6,19 @@ import { loadStdlib } from '@reach-sh/stdlib';
 // import MyAlgoConnect from '@reach-sh/stdlib/ALGO_MyAlgoConnect';
 // import { ALGO_MyAlgoConnect as MyAlgoConnect } from '@reach-sh/stdlib';
 import { ALGO_WalletConnect as WalletConnect } from '@reach-sh/stdlib';
+// const stdlib = loadStdlib(process.env);
+var opts = {
+  REACH_DEBUG: 'Y',
+  REACH_CONNECTOR_MODE: 'ALGO-live',
+  ALGO_SERVER: 'https://academy-algod.dev.aws.algodev.network',
+  ALGO_PORT: '',
+  ALGO_TOKEN: '2f3203f21e738a1de6110eba6984f9d03e5a95d7a577b34616854064cf2c0e7b',
+  ALGO_INDEXER_SERVER: 'https://algoindexer.testnet.algoexplorerapi.io',
+  ALGO_INDEXER_PORT: '',
+  ALGO_INDEXER_TOKEN: ''
+};
 
-
-const stdlib = loadStdlib(process.env);
-// const providerEnv = undefined; // 'TestNet'
-// const providerEnv = 'TestNet' // 'TestNet'
-// stdlib.setWalletFallback(reach.walletFallback({
-//   providerEnv, MyAlgoConnect }));
-
+const stdlib = loadStdlib(opts);
 stdlib.setWalletFallback(stdlib.walletFallback({
     providerEnv: 'TestNet', WalletConnect }));
 

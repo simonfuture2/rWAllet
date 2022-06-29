@@ -27,9 +27,6 @@ Settings | Developer Settings | Node Settings | TestNet
 
 To Run:
 `make react` to try it out.
-Note: 
-Use
-`make restore` to restore to node.js run instead of react
 
 More ideas for this repo to consider:
 
